@@ -33,10 +33,10 @@ class PandoraConnection(object):
 				'auth.partnerLogin',
 				True,
 				False,
-				deviceModel=String.Decode(self.DEVICE_MODEL),
-				username=String.Decode(self.PARTNER_USERNAME),
-				password=String.Decode(self.PARTNER_PASSWORD),
-				version=String.Decode(self.PROTOCOL_VERSION)
+				deviceModel=String.Decode(DEVICE_MODEL),
+				username=String.Decode(PARTNER_USERNAME),
+				password=String.Decode(PARTNER_PASSWORD),
+				version=String.Decode(PROTOCOL_VERSION)
 				)
 			self.partner_id = partner['partnerId']
 			self.partner_auth_token = partner['partnerAuthToken']
